@@ -10,6 +10,7 @@ const makeTransaction = (transaction) => {
 
       if (canProcess) {
         resolve({ id: transaction.id, time: delay });
+        return;
       }
 
       reject(transaction.id);
